@@ -1,8 +1,3 @@
-export interface IActive {
-    active: string;
-    setActive: (active: string) => void;
-}
-
 export interface ICarouselCard {
     name?: string;
     description?: string;
