@@ -12,7 +12,7 @@ export default function Home() {
       </Box>
 
       <Container maxW='container.lg'>
-        <Flex className="pt-10 max-540:pt-0">
+        <Flex className="pt-10 max-540:pt-0 gap-2">
           <Box className="w-fit pt-5 max-540:hidden">
             <Aside />
           </Box>

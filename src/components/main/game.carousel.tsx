@@ -45,7 +45,7 @@ function HotGame() {
     }
 
     return (
-        <Box className="slider-container relative my-10">
+        <Box className="slider-container relative">
             <Box>
                 <Text className="font-semibold text-large">Hot Games</Text>
             </Box>
