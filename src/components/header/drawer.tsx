@@ -1,4 +1,3 @@
-import { IActive } from '@/types/auth.types';
 import {
     Drawer,
     DrawerBody,
@@ -14,7 +13,7 @@ import { useEffect } from 'react';
 
 import { FaAlignJustify } from "react-icons/fa6";
 
-function NavDrawer({ active, setActive }: IActive) {
+function NavDrawer({ active, setActive }: any) {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     useEffect(() => {
