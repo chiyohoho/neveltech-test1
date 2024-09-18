@@ -9,12 +9,14 @@ import {
     Flex,
     Text,
 } from '@chakra-ui/react'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import { FaAlignJustify } from "react-icons/fa6";
 
-function NavDrawer({ active, setActive }: any) {
+function NavDrawer() {
     const { isOpen, onOpen, onClose } = useDisclosure()
+    const [active, setActive] = useState('GAME')
+
 
     useEffect(() => {
         const handleResize = () => {

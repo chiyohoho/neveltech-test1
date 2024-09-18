@@ -31,7 +31,7 @@ const HeaderNav = () => {
                     </Box>
 
                     <Box className='block 860:hidden'>
-                        <NavDrawer active={active} setActive={setActive} />
+                        <NavDrawer />
                     </Box>
                 </Flex>
             </Container>
