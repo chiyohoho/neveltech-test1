@@ -1,0 +1,16 @@
+.aside {
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 90px;
+}
+
+.aside-menu-text {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #cccccc;
+
+    &.active {
+        color: black;
+
+    }
+}

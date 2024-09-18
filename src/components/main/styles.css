@@ -1,0 +1,28 @@
+.slick-slider {
+    cursor: grab;
+}
+
+.slick-slider:active {
+    cursor: grabbing;
+}
+
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+
+.aside-menu-text {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #cccccc;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    /* height: 100%; */
+    padding: 10px 0px;
+
+    &.active {
+        color: black;
+        font-weight: 500;
+    }
+}
