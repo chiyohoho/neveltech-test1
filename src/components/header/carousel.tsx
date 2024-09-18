@@ -27,15 +27,14 @@ const HeaderCarousel: React.FC = () => {
     return (
         <Slider {...settings}>
             {images.map((image, index) => (
-                <Box key={index} h={'full'} objectFit={'cover'}>
+                <Box key={index}>
                     <Image
                         src={image}
                         alt={`Slide ${index}`}
-                        objectFit='cover'
+                        objectFit='fill'
                         width="100%"
                         minH={'300px'}
-                        maxH={'400px'}
-                        h={'100%'}
+                        maxH={'500px'}
                     />
                 </Box>
             ))}
