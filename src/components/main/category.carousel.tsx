@@ -55,8 +55,8 @@ function CategoryGame() {
     }
 
     return (
-        <Box className="slider-container relative">
-            <Box>
+        <Box className="slider-container relative mb-5">
+            <Box className="my-5">
                 <Text className="font-semibold text-large">Hottest Category</Text>
             </Box>
             <Slider {...settings}>

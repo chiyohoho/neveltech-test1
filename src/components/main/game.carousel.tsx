@@ -30,6 +30,8 @@ function HotGame() {
         dots: false,
         infinite: true,
         speed: 500,
+        autoplay: true,
+        autoplaySpeed: 4000,
         slidesToShow: 2,
         slidesToScroll: 1,
         initialSlide: 0,
@@ -46,7 +48,7 @@ function HotGame() {
 
     return (
         <Box className="slider-container relative">
-            <Box>
+            <Box className="mb-5">
                 <Text className="font-semibold text-large">Hot Games</Text>
             </Box>
             <Slider {...settings}>

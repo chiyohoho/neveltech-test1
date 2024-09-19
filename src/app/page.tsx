@@ -2,12 +2,13 @@ import Aside from "@/components/aside";
 import ScrollToTopButton from "@/components/button/scroll.top";
 import Main from "@/components/main";
 import NavMobile from "@/components/main/nav.mobile";
-import { Box, Container, Flex } from "@chakra-ui/react";
+import { Box, Button, Center, Container, Flex, Text } from "@chakra-ui/react";
+import { FaPlus } from "react-icons/fa6";
 
 export default function Home() {
   return (
     <Box className="">
-      <Box className="w-full max-540:block hidden">
+      <Box className="w-full mb-5 max-540:block hidden">
         <NavMobile />
       </Box>
 
@@ -21,6 +22,18 @@ export default function Home() {
             <Main />
           </Box>
         </Flex>
+
+        <Box className="w-full max-540:block hidden ">
+          <Center className="w-full">
+            <Button className="flex items-center gap-1 w-[90%] py-6 mt-5 my-10 bg-[#f2f2f2] text-black">
+              <Text fontWeight={'bold'}>
+                Load More
+              </Text>
+
+              <FaPlus fontWeight={'bold'} />
+            </Button>
+          </Center>
+        </Box>
 
         <ScrollToTopButton />
       </Container>
