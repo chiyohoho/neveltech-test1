@@ -23,7 +23,7 @@ const MobileCard: React.FC<CarouselCardProps> = ({ item }) => {
             </Center>
 
             <Box className='h-1/2 bg-[#c58f03] rounded-b-[20px]'>
-                <Center className='w-full h-full px-10'>
+                <Center className='w-full h-full' p={[4, 10]}>
                     <Box className='flex flex-col gap-5'>
                         <Flex className='gap-4 items-start'>
                             <Image className='aspect-square w-[60px] h-[60px]' src={item.image} alt='' />
