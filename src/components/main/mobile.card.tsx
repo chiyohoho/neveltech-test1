@@ -8,7 +8,7 @@ interface CarouselCardProps {
 
 const MobileCard: React.FC<CarouselCardProps> = ({ item }) => {
     return (
-        <Box className='max-h-[500px] h-[500px] flex flex-col' mr={3} py={1} px={5}>
+        <Box className='max-h-[500px] h-[500px] flex flex-col' mr={3} py={1} pl={5}>
             <Center className='w-full h-1/2'>
                 <Box
                     bgImage={`url(${item.banner})`}
