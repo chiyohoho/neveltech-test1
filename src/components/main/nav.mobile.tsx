@@ -2,9 +2,10 @@
 
 import { Box, Flex, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
-import { IoAlbums, IoAppsSharp, IoSearchSharp } from "react-icons/io5"
+import { IoAlbums, IoAppsSharp } from "react-icons/io5"
 import { IoMdHome } from "react-icons/io"
 import { FaFilter } from "react-icons/fa6";
+import NavMobileSearch from '../button/mobile.search'
 
 const NavMobile = () => {
     const [active, setActive] = useState('1')
@@ -27,10 +28,7 @@ const NavMobile = () => {
                     <Text className='leading-4'>ALL GAMES</Text>
                 </Box>
 
-                <Box onClick={() => setActive('4')} className={`aside-menu-text w-full flex flex-col aspect-square justify-center items-center gap-1 ${active === '4' ? 'active' : ''}`}>
-                    <IoSearchSharp />
-                    <Text className='leading-4'>SEARCH</Text>
-                </Box>
+                <NavMobileSearch active={active} setActive={setActive} />
 
                 <Box onClick={() => setActive('5')} className={`aside-menu-text w-full flex flex-col aspect-square justify-center border-l-[1px] border-l-gray-200 items-center gap-1 ${active === '5' ? 'active' : ''}`}>
                     <FaFilter />

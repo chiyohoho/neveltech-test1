@@ -19,7 +19,7 @@ const CategoryCard: React.FC<CarouselCardProps> = ({ item }) => {
                         {item.name}
                     </Text>
 
-                    <Text className='text-gray-300 text-xtiny font-light'>
+                    <Text noOfLines={3} className='text-gray-300 text-xtiny font-light'>
                         {item.description}
                     </Text>
                 </Box>

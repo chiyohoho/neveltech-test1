@@ -9,3 +9,8 @@ export interface ICarouselCategory extends ICarouselCard {
     icon: string[]
     logo: string
 }
+
+export interface NavMobileSearchProps {
+    setActive: React.Dispatch<React.SetStateAction<string>>
+    active: string;
+}
